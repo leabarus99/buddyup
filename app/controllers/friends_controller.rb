@@ -1,8 +1,7 @@
 class FriendsController < ApplicationController
-
-  def index
-    @friends = Friend.all
-  end
+  # def index
+  #   @friends = Friend.all
+  # end
 
   def show
     @friend = Friend.find(params[:id])
@@ -15,13 +14,15 @@ class FriendsController < ApplicationController
   def create
     @friend = Friend.new(friend_params)
     if @friend.save
-      redirect_to friend_path(@friend)
+      redirect_to friends_path(@friend)
+    else
+      render :new
     end
   end
 
   private
 
   def friend_params
-    params.require(:friends).permit(:first_name, :last_name, :age, :personnality, :hobby, :availability, :localisation, :event_category, :custumer_id)
+    params.require(:friend).permit(:first_name, :last_name, :age, :personnality, :hobby, :availability, :localisation, :event_category, :custumer_id)
   end
 end
