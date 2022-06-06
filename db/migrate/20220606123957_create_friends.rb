@@ -9,7 +9,7 @@ class CreateFriends < ActiveRecord::Migration[6.1]
       t.string :availability
       t.string :localisation
       t.string :event_category
-      t.references :custumer_id, null: false, foreign_key: true
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
