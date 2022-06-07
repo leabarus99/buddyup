@@ -1,10 +1,24 @@
 <% if user_signed_in? %>
-Hello <% current_user %>
-<% end %>
+  <% if current_user.photo.attached?  %>
+  <div class = 'container'>
+    <%= cl_image_tag(current_user.photo.key, class: "avatar-img") %>
+    <%= link_to "Edit", profil_path, class: "btn btn-flat", id: 'buttonedit'%></div>
+    <p> User 1 <% current_user %></p>
+    <div class= 'friends'>
+      <div class = allfriends ><p>Your current friends</p>
+      <%= cl_image_tag 'cba3ulehgxdzjc2lzfh4' %></div>
+      <%= link_to "Explore >", profil_path %>
+    </div>
+    <br>
+    <div class= 'line'></div>
+    <h1>User 1 à confirmer son identité</h1>
+    <div class= 'identité'>
+      <p><ion-icon name="Identité"></ion-icon></p>
+      <p><ion-icon name="Adresse e-mail"></ion-icon></p>
+      <p><ion-icon name="Numero de telephone"></ion-icon></p>
+    </div>
 
-<% if current_user.photo.attached?  %>
-<%= cl_image_tag(current_user.photo.key , width: 400, height: 300) %>
-<% else %>
-<button class="btn btn-link">Login</button>
+  <% else %>
+    <button class="btn btn-link">Login</button>
+  <% end %>
 <% end %>
-

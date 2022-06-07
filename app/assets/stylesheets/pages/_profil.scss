@@ -1,0 +1,88 @@
+
+.avatar-img {
+ border-radius: 50%;
+ height: 150px;
+ width: 150px;
+ object-fit: cover;
+ display: block;
+ padding: 8px;
+ padding-top: 30px
+}
+
+p{
+  font-family: $body-font;
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+#buttonedit {
+  padding-left: 0px;
+  margin-top: 23px;
+  margin-right: 11px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.friends {
+  background-color: #605d5d29;
+  height: 150px;
+  width: 350px;
+  border-radius: 16px;
+  margin-left: 30px;
+  margin-top: 16px;
+  padding-left: 16px;
+  padding-right: 24px;
+}
+
+.friends img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  padding-top: 22px;
+
+}
+
+.allfriends {
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  font-size: 21px;
+}
+
+.allfriends p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  padding-left: 8px;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.friends a{
+  padding-left: 17px;
+  color: #d3912f;;
+}
+
+.line {
+  border: 1px solid #d4d4d4;
+  width: 85%;
+  margin-left: 30px;
+  margin-top: 16px;
+}
+h1{
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  margin-top: 21px;
+  margin-bottom: 8px;
+
+}
+
+.identité p{
+  margin: 0px;
+  font-size: 18px;
+}
