@@ -1,15 +1,12 @@
 // Import page-specific CSS files here.
 @import "home";
-
 @import "profil";
-
 @import "reservationindex";
 
 
 // Specific CSS for your home-page
-.container {
+.container-buddyup {
   margin: 3px 0px;
-  margin-bottom: 100px;
 }
 
 // Log buttons
@@ -31,11 +28,13 @@
   width: 93%;
   justify-content: center;
   margin: 0px auto;
+  margin-top: 30px;
 }
 
 .search-bar p {
   background-color: #f5ede8;
   color: #ada19a;
+  font-size: 16px;
   padding: 10px 15px;
   border-radius: 10px;
   align-items: center;
@@ -44,6 +43,7 @@
 .search-tags p {
   background-color: #f5ede8;
   color: #ada19a;
+  font-size: 16px;
   padding: 10px 20px;
   border-radius: 50px;
   align-items: center;
@@ -83,6 +83,7 @@
   font-size: 12px;
   opacity: .7;
   margin: 0;
+  padding-left: 0px;
 }
 
 .card-friend .card-friend-infos {
@@ -99,6 +100,10 @@
   align-items: center;
 }
 
+.card-friend-infos-first-line a {
+  text-decoration: none;
+  color: black;
+}
 .available {
   color: $orange;
 }
@@ -113,6 +118,7 @@
   opacity: .7;
   margin: 10px 0px;
   align-items: center;
+  padding-left: 0px;
 }
 
 .localisation-line ion-icon {
