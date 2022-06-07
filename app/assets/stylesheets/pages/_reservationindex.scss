@@ -1,3 +1,7 @@
+.container-buddyup {
+  margin: 0px auto;
+}
+
 .search-features {
   display: flex;
   justify-content: space-around;
@@ -11,6 +15,7 @@
 .search-reservation p {
   background-color: #f5ede8;
   color: #ada19a;
+  font-size: 18px;
   padding: 10px 15px;
   border-radius: 10px;
   align-items: center;
@@ -50,7 +55,6 @@
   margin-bottom: 20px;
 }
 
-
 .profile-reservation-infos {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
@@ -64,6 +68,8 @@
   font-family: $body-font;
   font-size: 18px;
   font-weight: 300;
+  padding-left: 0px;
+
 }
 
 .profile-reservation-infos h3 {
@@ -78,7 +84,9 @@
   height: 120px;
   display: flex;
   align-items: center;
-  margin: 40px 0px;
+  margin: 40px 10px;
+  justify-content: center;
+
 }
 
 .card-preferred img {
@@ -110,11 +118,18 @@
 .infos-stars {
   display: flex;
   align-items: center;
-  padding: 20px;
   font-size: 18px;
 }
 
 .infos-stars ion-icon {
   margin-left: 5px;
   color: rgb(249, 200, 52);
+}
+
+.infos-text {
+  width: 180px;
+}
+
+.infos-text p {
+  padding-left: 0px;
 }

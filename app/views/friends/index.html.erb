@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container-buddyup">
   <div class="log-buttons">
     <%= link_to "Login", new_user_session_path %>
     <%= link_to "Logout", destroy_user_session_path, method: :delete %>
   </div>
 
-  <h1>Home</h1>
+  <%# <h1>Home</h1> %>
   <div class="search-bar">
     <p>Search...</p>
   </div>
@@ -15,12 +15,13 @@
   </div>
 
   <div class="cards">
+  <% @friends.each do |friend| %>
     <div class="card-friend">
       <img src="https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
       <div class="card-friend-infos">
         <div>
           <div class="card-friend-infos-first-line">
-            <h2><%= link_to friend.first_name, friend_path(friend)%></h2>
+            <h2><%= link_to friend.first_name.upcase, friend_path(friend)%></h2>
             <p class="available">Availability</p>
           </div>
           <div class="localisation-line">
@@ -40,7 +41,7 @@
       <div class="card-friend-infos">
         <div>
           <div class="card-friend-infos-first-line">
-            <h2><%=link_to friend.first_name, friend_path(friend)%></h2>
+            <h2><%=link_to friend.first_name.upcase, friend_path(friend)%></h2>
             <p class="available">Availability</p>
           </div>
           <div class="localisation-line">
@@ -54,7 +55,7 @@
 
       </div>
     </div>
-    
+
   <% end %>
   </div>
 </div>
