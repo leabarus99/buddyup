@@ -1,5 +1,4 @@
 class FriendsController < ApplicationController
-
   def index
     @friends = policy_scope(Friend).order(created_at: :desc)
   end
@@ -11,6 +10,7 @@ class FriendsController < ApplicationController
 
   def new
     @friend = Friend.new
+    @friends = Friend.all
     authorize @friend
   end
 
