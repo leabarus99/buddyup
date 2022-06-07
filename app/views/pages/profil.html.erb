@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+Hello <% current_user %>
+<% end %>
+
+<% if current_user.photo.attached?  %>
+<%= cl_image_tag(current_user.photo.key , width: 400, height: 300) %>
+<% else %>
+<button class="btn btn-link">Login</button>
+<% end %>
