@@ -11,6 +11,10 @@ class FriendPolicy < ApplicationPolicy
     return true
   end
 
+  def show?
+    return true
+  end
+
   def update?
     record.user == user
     # - record: the restaurant passed to the `authorize` method in controller
