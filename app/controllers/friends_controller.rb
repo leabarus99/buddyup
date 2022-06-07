@@ -5,6 +5,7 @@ class FriendsController < ApplicationController
 
   def show
     @friend = Friend.find(params[:id])
+    @friends = Friend.all
     authorize @friend
   end
 
@@ -16,11 +17,20 @@ class FriendsController < ApplicationController
 
   def create
     @friend = Friend.new(friend_params)
+    @friends = Friend.all
+    @friend.user = current_user
     if @friend.save
-      redirect_to friends_path(@friend)
+      redirect_to friend_path(@friend)
     else
       render :new
     end
+    authorize @friend
+  end
+
+  def destroy
+    @friend = Friend.find(params[:id])
+    @friend.destroy
+    redirect_to friends_path
     authorize @friend
   end
 

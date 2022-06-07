@@ -6,7 +6,6 @@
   <%= f.input :availability %>
   <%= f.input :localisation %>
    <%= f.input :event_category %>
-  <%= f.input :user_id %>
   <%= f.submit %>
 <% end %>
 
@@ -19,3 +18,11 @@
     <%= link_to "Update", edit_friend_path(friend) %>
   <% end %>
 <% end %>
+
+
+<h1>
+  <%= @friend.first_name %>
+   <%= @friend.last_name %>
+  <button class="btn btn-link">Request</button>
+  <%= link_to "delete this friend", friend_path(@friend), method: :delete, class: "btn btn-cancel", data: { confirm: "Are you sure you want to delete this friend?" } %>
+ </h1>
