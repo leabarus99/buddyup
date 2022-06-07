@@ -1,4 +1,9 @@
 <h1>All friends</h1>
 
-<%= link_to "New friend", new_friend_path, class: "btn btn-flat" %>
+<ul>
+    <% @friends.each do |friend| %>
+      <li><%= link_to friend.first_name, friend_path(friend) %></li>
+    <% end %>
+  </ul>
 
+<%= link_to "New friend", new_friend_path, class: "btn btn-flat" %>

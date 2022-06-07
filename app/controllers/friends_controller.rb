@@ -26,6 +26,13 @@ class FriendsController < ApplicationController
     authorize @friend
   end
 
+  def destroy
+    @friend = Friend.find(params[:id])
+    @friend.destroy
+    redirect_to friends_path
+    authorize @friend
+  end
+
   private
 
   def friend_params
