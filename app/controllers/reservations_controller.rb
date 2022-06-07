@@ -1,6 +1,6 @@
 class ReservationsController < ApplicationController
   def index
-    @reservations = Reservation.all
+    @reservations = policy_scope(Reservation).order(created_at: :desc)
   end
 
   def show
@@ -18,6 +18,7 @@ class ReservationsController < ApplicationController
     else
       render :new
     end
+    authorize @reservation
   end
 
   def destroy
