@@ -21,12 +21,10 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-<<<<<<< HEAD
-gem 'dotenv-rails', groups: [:development, :test]
-=======
-gem 'pundit'
 
->>>>>>> 49a618d1d3b30285ed6d5ce84592aeadd8c3a0be
+gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'pundit'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'devise'
