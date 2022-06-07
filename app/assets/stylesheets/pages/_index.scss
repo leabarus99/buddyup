@@ -92,6 +92,7 @@
 .card-friend-infos-first-line {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .available {
@@ -112,4 +113,63 @@
 
 .localisation-line ion-icon {
   font-size: 14px;
+}
+
+.calendar-line {
+  display: flex;
+  opacity: .7;
+  margin: 10px 0px;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.calendar-line ion-icon {
+  font-size: 14px;
+  margin-right: 10px ;
+}
+
+.personnality-line {
+  display: flex;
+  opacity: .7;
+  margin: 10px 0px;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.personnality-line ion-icon {
+  font-size: 14px;
+  margin-right: 3px ;
+}
+
+
+.event-line {
+  display: flex;
+  opacity: .7;
+  margin: 10px 0px;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.event-line ion-icon {
+  font-size: 14px;
+  margin-right: 3px ;
+}
+
+.hobby-line {
+  display: flex;
+  opacity: .7;
+  margin: 10px 0px;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.hobby-line ion-icon {
+  font-size: 14px;
+  margin-right: 3px ;
+}
+
+.logos-first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
