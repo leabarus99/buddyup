@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(version: 2022_06_07_092505) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -42,19 +41,6 @@ ActiveRecord::Schema.define(version: 2022_06_07_092505) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
-=======
-  create_table "customers", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.integer "age"
-    t.string "location"
-    t.string "event_category"
-    t.string "hobby"
-    t.string "personality"
-    t.string "event_date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
->>>>>>> 49a618d1d3b30285ed6d5ce84592aeadd8c3a0be
   end
 
   create_table "friends", force: :cascade do |t|
