@@ -7,6 +7,15 @@
   <%= f.input :localisation %>
    <%= f.input :event_category %>
   <%= f.input :user_id %>
-  <%= f.input :photo %>
   <%= f.submit %>
+<% end %>
+
+<% if policy(Friend).create? %>
+  <%= link_to "New friend profile", new_friend_path %>
+<% end %>
+
+<% @friends.each do |friend| %>
+  <% if policy(friend).edit? %>
+    <%= link_to "Update", edit_friend_path(friend) %>
+  <% end %>
 <% end %>
