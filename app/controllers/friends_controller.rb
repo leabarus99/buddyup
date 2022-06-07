@@ -1,14 +1,17 @@
 class FriendsController < ApplicationController
-  # def index
-  #   @friends = Friend.all
-  # end
+  def index
+    @friends = policy_scope(Friend).order(created_at: :desc)
+  end
 
   def show
     @friend = Friend.find(params[:id])
+    authorize @friend
   end
 
   def new
     @friend = Friend.new
+    @friends = Friend.all
+    authorize @friend
   end
 
   def create
@@ -18,6 +21,7 @@ class FriendsController < ApplicationController
     else
       render :new
     end
+    authorize @friend
   end
 
   private
