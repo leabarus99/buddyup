@@ -29,5 +29,5 @@ end
 private
 
 def reservation_params
-  params.require(:reservation).permit(:location, :date, :friend_id, :customer_id)
+  params.require(:reservation).permit(:location, :date, :friend_id, :user_id)
 end
