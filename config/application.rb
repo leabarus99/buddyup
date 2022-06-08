@@ -24,4 +24,13 @@ module Buddyup
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
   end
+
+  # class Application < Rails::Application
+  #   config.autoload_once_paths << "#{application}/app/serializers"
+  #   config.autoload_once_paths << "#{friends}/app/serializers"
+  #   config.autoload_once_paths << "#{pages}/app/serializers"
+  #   config.autoload_once_paths << "#{reservations}/app/serializers"
+  #   config.autoload_once_paths << "#{root}/app/serializers"
+  # end
+
 end
