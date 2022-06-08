@@ -14,3 +14,9 @@ ActiveStorage.start()
 
 import "controllers"
 import "bootstrap"
+
+import { changeLabelClick } from "../plugins/listener"
+
+document.addEventListener("turbolinks:load", event => {
+  changeLabelClick();
+})
