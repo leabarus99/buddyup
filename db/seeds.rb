@@ -27,7 +27,7 @@ user_4 =User.create!(email: 'lea@gmail.com', password:'lilili', password_confirm
 file_4 = URI.open("https://res.cloudinary.com/du6ejgggh/image/upload/v1654595406/cba3ulehgxdzjc2lzfh4.jpg")
 user_4.photo.attach(io: file_4, filename: 'pdp4', content_type: 'image/jpg')
 
-friend_1 = Friend.create!(first_name: 'Nathan', last_name: 'Dubois', age: '24', personnality: 'Calme', hobby: 'sport, cuisine', availability: '14/07/2022', localisation: 'Marseille', event_category: 'Bowling',  user: user_1)
+friend_1 = Friend.create!(first_name: 'Nathan', last_name: 'Dubois', age: '24', personnality: 'Calme', hobby: 'sport, cuisine', availability: '14/07/2022', localisation: '21 rue haxo, Marseille', event_category: 'Bowling',  user: user_1)
 friend_2 = Friend.create!(first_name: 'Paul', last_name: 'Dumont', age: '24', personnality: 'Extraverti', hobby: 'soirée, voyage', availability: '14/07/2022', localisation: 'Lyon', event_category: 'Repas de famille',  user: user_1)
 friend_3 = Friend.create!(first_name: 'Lina', last_name: 'El amrani', age: '24', personnality: 'Reservée', hobby: 'cuisine, jardinage', availability: '14/07/2022', localisation: 'Paris', event_category: 'Randonnée',  user: user_2)
 friend_4 = Friend.create!(first_name: 'Valéria', last_name: 'Pineda', age: '24', personnality: 'Extravertie', hobby: 'cinéma, musique', availability: '13/07/2022', localisation: 'Bordeaux', event_category: 'Cinéma',  user: user_2)

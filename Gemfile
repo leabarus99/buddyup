@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem "geocoder"
 
 # gem 'dotenv-rails', groups: [:development, :test]
 
@@ -31,6 +32,7 @@ gem 'devise'
 
 gem 'cloudinary', '~> 1.16.0'
 
+gem 'bootstrap', '~> 5.1.3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
