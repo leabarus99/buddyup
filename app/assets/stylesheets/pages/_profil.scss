@@ -1,3 +1,11 @@
+.big_container{
+background-color: #fffcfa;
+}
+
+.container_buddyup{
+  display: flex;
+  justify-content: space-between;
+}
 
 .avatar-img {
  border-radius: 50%;
@@ -7,14 +15,16 @@
  display: block;
  padding: 8px;
  padding-top: 30px;
- margin-left: 17px;
- margin-top: 23px;
+ margin-left: 21px;
+ margin-top: 12px;
+
 }
 
 p{
   font-family: $body-font;
   font-size: 30px;
   padding-left: 40px;
+  padding-bottom: 8px;
 }
 
 #buttonedit {
@@ -23,6 +33,7 @@ p{
   height: 30px;
   width: 62px;
   margin-right: 24px;
+  padding-left: 14px;
 }
 
 .friends {
@@ -37,11 +48,17 @@ p{
 }
 
 .friends img {
-  border-radius: 50%;
   height: 80px;
   width: 80px;
-  padding-top: 22px;
+  padding-top: 0px;
+  border-radius: 17px;
+  margin-top: 24px;
 
+}
+
+.friends a{
+  padding-left: 17px;
+  color: #d3912f;;
 }
 
 .allfriends {
@@ -57,13 +74,12 @@ p{
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   padding-left: 8px;
-  margin-top: 30px;
   font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 35px;
 }
-
-.friends a{
-  padding-left: 17px;
-  color: #d3912f;;
+.lien_explore{
+  font-size: 14px;
 }
 
 .line {
@@ -74,12 +90,12 @@ p{
 }
 h1{
   font-family: "Open Sans", sans-serif;
-  font-weight: bold;
   font-size: 21px;
   margin-top: 21px;
   margin-bottom: 8px;
   margin-left: 23px;
-
+  font-size: 25px;
+  padding-left: 6px
 }
 
 .identité p{
@@ -101,11 +117,32 @@ h1{
 
 .commentaire{
   display:flex;
+  padding-left: 16px;
 }
 .commentaire p {
   font-size: 16px;
   margin-left: -25px;
   padding-bottom: -37px;
   margin-bottom: -9px;
+  margin-top: 9px;
   font-family: "Open Sans", sans-serif;
+
+}
+
+.date_commentaire {
+  color: #aea4a4;
+}
+
+
+.commentaire img {
+  height: 50px;
+  border-radius: 50%;
+  width: 60px;
+  margin-top: 8px;
+}
+
+.titre{
+  margin-bottom: 16px;
+  font-size: 28px;
+  margin-top: 8px;
 }
