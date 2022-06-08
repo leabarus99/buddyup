@@ -7,6 +7,8 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "mapbox-gl/dist/mapbox-gl";
+@import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder";
 
 // Your CSS partials
 @import "components/index";
@@ -20,7 +22,7 @@ body {
   padding-bottom: 100px;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: $headers-font;
   font-weight: 700;
   font-size: 34px;
@@ -39,7 +41,7 @@ ul li a {
   height: 70px;
   position: sticky;
   background-color: white;
-  border-top: 12px solid #fefaff;
+  border-top: 13px solid #fffcfa;
   position: fixed;
   bottom: 0px;
   border-radius: 20px 0px;
@@ -110,7 +112,7 @@ ul li a {
   height: 75px;
   background: $orange;
   border-radius: 50%;
-  border: 6px solid #fefaff;
+  border: 6px solid #fffcfa;
   transition: 0.5s;
 }
 

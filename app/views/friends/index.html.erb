@@ -14,6 +14,19 @@
     <p>Randonnée</p>
   </div>
 
+
+  <div style="width: 100%; height: 200px;"
+    data-controller="mapbox"
+    data-mapbox-markers-value="<%= @markers.to_json %>"
+    data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+
+
+
+
+
+
+
+
   <div class="cards">
   <% @friends.each do |friend| %>
     <div class="card-friend">
@@ -25,7 +38,7 @@
             <p class="available">Availability</p>
           </div>
           <div class="localisation-line">
-            <ion-icon name="pin-outline"></ion-icon><p class="localisation">Marseille</p>
+            <ion-icon name="pin-outline"></ion-icon><p class="localisation"><%= friend.localisation %></p>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div class="card-friend-infos-details">

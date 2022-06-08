@@ -1,6 +1,14 @@
 class FriendsController < ApplicationController
   def index
     @friends = policy_scope(Friend).order(created_at: :desc)
+
+    @markers = @friends.geocoded.map do |friend|
+      {
+        lat: friend.latitude,
+        lng: friend.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { friend: friend })
+      }
+    end
   end
 
   def show
