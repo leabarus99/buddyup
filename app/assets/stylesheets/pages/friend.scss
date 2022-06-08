@@ -6,6 +6,8 @@
   margin: 10px 0px;
   align-items: center;
   padding-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .calendar-line ion-icon {
@@ -57,6 +59,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .back-friends a {
@@ -64,4 +68,39 @@
   color: $orange;
   margin-left: 20px;
   font-weight: 500;
+}
+
+.profile-image {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-description {
+ justify-content: center;
+  margin: 20px;
+
+}
+
+.profile-description p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+  padding-left: 0px;
+}
+
+#click-me {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #8AA8A1;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  line-height: 1;
+  display: block;
+  margin: auto;
+  border: none;
+  margin-top: 33px;
 }
