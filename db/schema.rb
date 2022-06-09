@@ -43,12 +43,6 @@ ActiveRecord::Schema.define(version: 2022_06_09_144748) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "chatrooms", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "friends", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -64,16 +58,6 @@ ActiveRecord::Schema.define(version: 2022_06_09_144748) do
     t.float "latitude"
     t.float "longitude"
     t.index ["user_id"], name: "index_friends_on_user_id"
-  end
-
-  create_table "messages", force: :cascade do |t|
-    t.string "content"
-    t.bigint "chatroom_id", null: false
-    t.bigint "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["chatroom_id"], name: "index_messages_on_chatroom_id"
-    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "reservations", force: :cascade do |t|
