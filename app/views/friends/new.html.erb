@@ -1,13 +1,17 @@
-<%= simple_form_for [@friend] do |f| %>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
-  <%= f.input :personnality %>
-  <%= f.input :hobby %>
-  <%= f.input :availability %>
-  <%= f.input :localisation %>
-   <%= f.input :event_category %>
-  <%= f.submit %>
+<div class="create-friend-container">
+  <div class="enter-info">
+  <%= simple_form_for [@friend] do |f| %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :personnality %>
+    <%= f.input :hobby %>
+    <%= f.input :availability %>
+    <%= f.input :localisation %>
+    <%= f.input :event_category %>
+    <%= f.submit :class => "create-friend" %>
 <% end %>
+  </div>
+</div>
 
 <% if policy(Friend).create? %>
   <%= link_to "New friend profile", new_friend_path %>
@@ -18,5 +22,3 @@
     <%= link_to "Update", edit_friend_path(friend) %>
   <% end %>
 <% end %>
-
-

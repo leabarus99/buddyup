@@ -1,28 +1,41 @@
-<div class='big_container'>
+<div class="container-buddyup">
   <% if user_signed_in? %>
 
-    <div class = 'container_buddyup'>
-      <%# <%= cl_image_tag(current_user.photo.key, class: "avatar-img") %>
-      <%= image_tag("woman.jpg", class: "avatar-img") %>
-      <%= link_to "Edit", edit_user_registration_path, class: "btn btn-flat", id: 'buttonedit'%>
+    <div class="top-profil">
+      <div class="user-profil">
+        <div class="avatar-img">
+          <% if @user.photo.attached? %>
+          <%= cl_image_tag (@user.photo) %>
+          <% else %>
+          <%= image_tag('woman.jpg') %>
+          <% end %>
+        </div>
+        <h2><%= @user.name %></h2>
+
+      </div>
+      <div class="edit-profil">
+        <p class="buttonedit"><%= link_to "Edit", edit_user_registration_path %></p>
+      </div>
     </div>
-    <h1 class= 'titre'> User 1 <% current_user %></h1>
-    <div class= 'friends'>
-      <div class = allfriends >
-        <div >
-          <p>Your current friends</p>
-          <div class= 'lien_explore'><%= link_to "Explore >", profil_path %></div>
+
+    <div class="friends">
+      <div class="allfriends">
+        <div class="friends-yours">
+          <p>Your current friend:</p>
+          <div class="explore-link"><%= link_to "Explore >", profil_path %></div>
         </div>
         <%= image_tag 'friend1.jpg' %>
       </div>
-  </div>
+    </div>
+
     <%= link_to "New friend", new_friend_path , class:"btn btn-flat" %>
+
     <div class= 'line'></div>
-    <h1 class= 'titre'>User 1 has confirmed their identity</h1>
+    <h1 class= 'titre'>Identity</h1>
     <div class= 'identité'>
-      <div class = 'iconsidentité'><p><ion-icon name="shield-checkmark-outline"></ion-icon> Identité</p></div>
-      <div class = 'iconsidentité'><p><ion-icon name="shield-checkmark-outline"></ion-icon> Adresse e-mail</p></div>
-      <div class = 'iconsidentité'><p><ion-icon name="shield-checkmark-outline"></ion-icon> Numero de telephone</p></div>
+      <div class = 'iconsidentité'><p><ion-icon name="shield-checkmark-outline"></ion-icon>ID</p></div>
+      <div class = 'iconsidentité'><p><ion-icon name="shield-checkmark-outline"></ion-icon>E-mail address</p></div>
+      <div class = 'iconsidentité'><p><ion-icon name="shield-checkmark-outline"></ion-icon>Phone number</p></div>
     </div>
     <div class= 'line'></div>
     <h1 class= 'titre' >2 commentaires</h1>
