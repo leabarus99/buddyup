@@ -43,19 +43,6 @@ ActiveRecord::Schema.define(version: 2022_06_08_103046) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "customers", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.integer "age"
-    t.string "location"
-    t.string "event_category"
-    t.string "hobby"
-    t.string "personality"
-    t.string "event_date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "friends", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -93,7 +80,6 @@ ActiveRecord::Schema.define(version: 2022_06_08_103046) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "name"
-    t.string "photo"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
