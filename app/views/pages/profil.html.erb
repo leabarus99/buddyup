@@ -1,8 +1,9 @@
 <div class='big_container'>
   <% if user_signed_in? %>
-    <% if current_user.photo.attached?  %>
+
     <div class = 'container_buddyup'>
-      <%= cl_image_tag(current_user.photo.key, class: "avatar-img") %>
+      <%# <%= cl_image_tag(current_user.photo.key, class: "avatar-img") %>
+      <%= image_tag("woman.jpg", class: "avatar-img") %>
       <%= link_to "Edit", edit_user_registration_path, class: "btn btn-flat", id: 'buttonedit'%>
     </div>
     <h1 class= 'titre'> User 1 <% current_user %></h1>
@@ -41,6 +42,6 @@
 
     <% else %>
       <button class="btn btn-link">Login</button>
-    <% end %>
+
   <% end %>
 </div>
