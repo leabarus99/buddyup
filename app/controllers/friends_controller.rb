@@ -9,6 +9,12 @@ class FriendsController < ApplicationController
         info_window: render_to_string(partial: "info_window", locals: { friend: friend })
       }
     end
+
+    if params[:query].present?
+      @friends = Friend.where(personnality: params[:query])
+    else
+      @friends = Friend.all
+    end
   end
 
   def show
