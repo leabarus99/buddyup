@@ -27,6 +27,20 @@
 
 }
 
+.update {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #8AA8A1;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  line-height: 1;
+  display: block;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .btn-cancel {
   color: white;
   padding: 8px 24px;
@@ -35,4 +49,17 @@
   transition: background 0.3s ease;
   text-decoration: none;
   line-height: 1;
+}
+
+.btn-cancel-account {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #D1B490;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  line-height: 1;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

@@ -1,6 +1,7 @@
+<div class="edit-friend-container">
+
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
-<div class="edit-friend-container">
   <div class="change-info">
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
@@ -32,14 +33,14 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Update" %>
+    <%= f.button :submit, "Update", :class => "update" %>
   </div>
 <% end %>
 
 
 <div class= "form-link">
-  <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
-  <%= link_to "Update", :back %>
+  <%= link_to "Delete account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn-cancel-account"%>
+
 
 </div>
 
