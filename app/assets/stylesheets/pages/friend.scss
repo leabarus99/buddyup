@@ -1,5 +1,4 @@
 
-
 .calendar-line {
   display: flex;
   opacity: .7;
@@ -8,6 +7,10 @@
   padding-right: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.calendar-line p {
+  padding-bottom: 0px;
 }
 
 .calendar-line ion-icon {
@@ -21,6 +24,10 @@
   margin: 10px 0px;
   align-items: center;
   padding-right: 10px;
+}
+
+.personnality-line p {
+  padding-bottom: 0px;
 }
 
 .personnality-line ion-icon {
@@ -37,6 +44,10 @@
   padding-right: 10px;
 }
 
+.event-line p {
+  padding-bottom: 0px;
+}
+
 .event-line ion-icon {
   font-size: 14px;
   margin-right: 3px ;
@@ -48,6 +59,10 @@
   margin: 10px 0px;
   align-items: center;
   padding-right: 10px;
+}
+
+.hobby-line p {
+  padding-bottom: 0px;
 }
 
 .hobby-line ion-icon {
