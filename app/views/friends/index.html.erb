@@ -25,7 +25,9 @@
   <div class="cards">
   <% @friends.each do |friend| %>
     <div class="card-friend">
-      <img src="<%= cl_image_tag(friend.photo.key) %>">
+       <div class="profile-image", style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+          url(<%= friend.photo.attached? ? cl_image_path(friend.photo.key) : asset_path("logan-friend.jpg") %>)">
+        </div>
       <div class="card-friend-infos">
         <div>
           <div class="card-friend-infos-first-line">
