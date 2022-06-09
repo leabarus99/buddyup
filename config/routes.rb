@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :friends
   resources :reservations
   resources :devise
+  resources :chatrooms, only: :show
 end
