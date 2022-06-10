@@ -40,7 +40,7 @@
        <% if friend.photo.attached? %>
           <%= cl_image_tag(friend.photo.key)  %>
         <% else %>
-          <%= image_tag("logan-friend.jpg") %>
+          <%= image_tag("default.jpg") %>
         <% end %>
 
       <div class="card-friend-infos">

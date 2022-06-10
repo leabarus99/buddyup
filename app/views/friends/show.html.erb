@@ -10,7 +10,7 @@
   </div>
 
   <div class="profile-image", style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-  url(<%=@friend.photo.attached? ? cl_image_path(@friend.photo.key) : asset_path("logan-friend.jpg") %>)">
+  url(<%=@friend.photo.attached? ? cl_image_path(@friend.photo.key) : asset_path("default.jpg") %>)">
   </div>
 
   <div class="cards">
@@ -63,11 +63,14 @@
 <div class="overlay">
 
   <div class="card-friend" id="popup">
+
+
     <% if @friend.photo.attached? %>
       <%= cl_image_tag @friend.photo.key %>
     <% else %>
-      <%= image_tag("logan-friend.jpg") %>
+      <%= image_tag("default.jpg") %>
     <% end %>
+                   
     <div class="card-friend-infos">
       <div>
         <h2 class="confirmation">Your request was accepted and confirmed!</h2>

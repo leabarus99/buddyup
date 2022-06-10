@@ -3,6 +3,7 @@
   background-color: #fffcfa;
 }
 
+
 .top-profil{
   display: flex;
   justify-content: space-between;
@@ -36,7 +37,9 @@ p{
 
 .buttonedit a {
   color: $green;
-  margin: 25px;
+  float: right;
+  margin-right: 25px;
+  margin-top: 25px;
   font-size: 18px;
 }
 
