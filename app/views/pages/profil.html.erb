@@ -5,7 +5,7 @@
       <div class="user-profil">
         <div class="avatar-img">
           <% if @user.photo.attached? %>
-          <%= cl_image_tag (@user.photo) %>
+          <%= cl_image_tag @user.photo.key %>
           <% else %>
           <%= image_tag('woman.jpg') %>
           <% end %>

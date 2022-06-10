@@ -36,11 +36,15 @@
   <div class="cards">
   <% @friends.each do |friend| %>
     <div class="card-friend">
+
+      <img src="<%= cl_image_path(friend.photo.key) %>">
+
        <% if friend.photo.attached? %>
           <%= cl_image_tag(friend.photo.key)  %>
         <% else %>
           <%= image_tag("logan-friend.jpg") %>
         <% end %>
+
       <div class="card-friend-infos">
         <div>
           <div class="card-friend-infos-first-line">
