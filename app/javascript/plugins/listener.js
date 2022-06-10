@@ -18,7 +18,7 @@ const listener = () => {
     modal.classList.remove('text-background')
   }
 
-  setTimeout(displayItem, 1000)
+  setTimeout(displayItem, 10000)
 
   button.addEventListener('click', (e) => {
     modal.classList.add('text-background')
