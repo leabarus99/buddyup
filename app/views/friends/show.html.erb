@@ -63,7 +63,11 @@
 <div class="overlay">
 
   <div class="card-friend" id="popup">
-    <%= cl_image_tag @friend.photo.key%>
+    <% if @friend.photo.attached? %>
+      <%= cl_image_tag @friend.photo.key %>
+    <% else %>
+      <%= image_tag("logan-friend.jpg") %>
+    <% end %>
     <div class="card-friend-infos">
       <div>
         <h2 class="confirmation">Your request was accepted and confirmed!</h2>
