@@ -12,6 +12,7 @@
   width: 70%;
 }
 
+
 .search-reservation p {
   background-color: #f5ede8;
   color: #ada19a;
@@ -30,6 +31,10 @@
   margin-left: 310px;
   margin-top: 20px;
 }
+
+.date{
+  margin-bottom: 0px;
+  }
 
 .subtitle {
   padding: 10px 0px;
@@ -71,7 +76,7 @@
   font-size: 18px;
   font-weight: 300;
   padding-left: 0px;
-
+  margin-bottom: -2px;
 }
 
 .profile-reservation-infos h3 {
@@ -136,6 +141,35 @@
 .infos-text p {
   padding-left: 0px;
 }
+
+
+
+.form-reviews{
+  padding: 30px;
+  padding-top: 10px;
+}
+
+.form-control{
+  border-radius:8px;
+  background-color: #f6ebeb;
+}
+
+.form-select {
+  border-radius:8px;
+  background-color: #f6ebeb;
+}
+
+.first_name {
+  font-weight: bold;
+}
+
+.name-reviews{
+  font-size: 23px;
+    font-weight: bold;
+    font-family: Open sans-serif;
+    margin-bottom: 1px;
+    padding-left: 0px;
+    margin-left: 0px;
 
 .text-background {
   display: none;
@@ -222,4 +256,5 @@
 .close-pop a {
   text-decoration: none;
   color: white;
+
 }

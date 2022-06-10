@@ -1,6 +1,8 @@
 class ReservationsController < ApplicationController
   def index
     @reservations = policy_scope(Reservation).order(created_at: :desc)
+    @review = Review.new
+    @friends = Friend.all
   end
 
   def show

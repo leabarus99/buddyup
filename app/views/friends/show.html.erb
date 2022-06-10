@@ -57,6 +57,12 @@
     <div>
     <button id="click-me">Request</button>
     </div>
+    
+<%= @friend.reviews.count %>
+<% @friend.reviews.each do |review| %>
+  <%= review.comment %>
+  <%= review.rating %>
+<% end %>
 
 
 <div class="text-background">
