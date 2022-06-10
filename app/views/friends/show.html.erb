@@ -64,12 +64,13 @@
 
   <div class="card-friend" id="popup">
 
+
     <% if @friend.photo.attached? %>
       <%= cl_image_tag @friend.photo.key %>
     <% else %>
       <%= image_tag("default.jpg") %>
     <% end %>
-
+                   
     <div class="card-friend-infos">
       <div>
         <h2 class="confirmation">Your request was accepted and confirmed!</h2>
