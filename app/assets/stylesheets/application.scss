@@ -47,7 +47,7 @@ ul li a {
   position: fixed;
   bottom: 0px;
   border-radius: 20px 0px;
-  z-index: 1;
+  z-index: 99;
 }
 
 .navigation ul {
@@ -141,6 +141,66 @@ ul li a {
   border-top-left-radius: 20px;
   box-shadow: 0px -10px 0px #fefaff;
 }
+
+
+
+
+
+
+// #first:checked ~ [for="first"] > img {
+//   top: -85px;
+// }
+// #first:checked ~ .circle,
+// #first:checked ~ div div .indicator {
+//   left: -66%;
+// }
+
+// #second:checked ~ [for="second"] > img {
+//   top: -85px;
+// }
+// #second:checked ~ .circle,
+// #second:checked ~ div div .indicator {
+//   left: 0;
+// }
+
+// #third:checked ~ [for="third"] > img {
+//   top: -85px;
+// }
+// #third:checked ~ .circle,
+// #third:checked ~ div div .indicator {
+//   left: 66%;
+// }
+
+// #last:checked ~ [for="last"] > img {
+//   top: -85px;
+// }
+// #last:checked ~ .circle,
+// #last:checked ~ div div .indicator {
+//   left: 66%;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Smallest device */

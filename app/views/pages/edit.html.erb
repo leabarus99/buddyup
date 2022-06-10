@@ -1,7 +1,6 @@
 <%= simple_form_for [@user] do |f| %>
   <%= f.input :name %>
-  <%= f.input :photo %>
+  <%= f.input :photo, as: :file, label: "Add a picture"%>
   <%= f.input :password %>
   <%= f.submit %>
 <% end %>
-
