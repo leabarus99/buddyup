@@ -40,7 +40,7 @@ friend1.photo.attach(io: photofriend1, filename: 'nathan.jpg', content_type: 'im
 friend2 = Friend.create!(first_name: 'Paul', last_name: 'Dumont', age: '24', personnality: 'Extraverti', hobby: 'soirée, voyage', availability: 'Today', localisation: 'Lyon', event_category: 'Repas de famille',  user: user1)
 friend2.photo.attach(io: photofriend2, filename: 'paul.jpeg', content_type: 'image/jpeg')
 
-friend3 = Friend.create!(first_name: 'Lina', last_name: 'El amrani', age: '24', personnality: 'Reservée', hobby: 'cuisine, jardinage', availability: 'June 3rd', localisation: 'Paris', event_category: 'Randonnée',  user: user2)
+friend3 = Friend.create!(first_name: 'Lina', last_name: 'El amrani', age: '24', personnality: 'C', hobby: 'cuisine, jardinage', availability: 'June 3rd', localisation: 'Paris', event_category: 'Randonnée',  user: user2)
 friend3.photo.attach(io: photofriend3, filename: 'lina.jpeg', content_type: 'image/jpeg')
 
 friend4 = Friend.create!(first_name: 'Valéria', last_name: 'Pineda', age: '24', personnality: 'Extravertie', hobby: 'cinéma, musique', availability: 'Now', localisation: 'Bordeaux', event_category: 'Cinéma',  user: user2)

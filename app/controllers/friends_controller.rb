@@ -11,7 +11,7 @@ class FriendsController < ApplicationController
     end
 
     if params[:query].present?
-      @friends = Friend.where(personnality: params[:query])
+      @friends = @friends.search_by_personnality_and_localisation(params[:query])
     else
       @friends = Friend.all
     end
