@@ -1,13 +1,20 @@
 <div class="container-buddyup">
 
-  <div class="search-features">
-    <div class="search-reservation">
-      <p>Search...</p>
-    </div>
-
-    <div class="filters">
+    <%# <div class="filters">
     <ion-icon name="filter-outline"></ion-icon>
-    </div>
+    </div> %>
+    <%# :( plus de filtre %>
+
+     <%= simple_form_for :search, url: friends_path, method: :get do |f| %>
+  <div class="search-form-control form-group">
+    <%= text_field_tag :query, params[:query], class:"form-control", placeholder: "Find a friend" %>
+    <button name="button" type="submit" class="btn btn-flat-search">
+      <i class="fas fa-search"></i> Search
+    </button>
+  </div>
+<% end %>
+
+
   </div>
 
   <h1 class="subtitle">Latest</h1>
