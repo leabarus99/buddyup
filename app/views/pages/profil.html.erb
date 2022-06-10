@@ -7,7 +7,7 @@
           <% if @user.photo.attached? %>
           <%= cl_image_tag @user.photo.key %>
           <% else %>
-          <%= image_tag('woman.jpg') %>
+          <%= image_tag('default.jpg') %>
           <% end %>
         </div>
         <h2><%= @user.name %></h2>

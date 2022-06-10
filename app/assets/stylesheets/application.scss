@@ -141,6 +141,66 @@ ul li a {
 }
 
 
+
+
+
+
+// #first:checked ~ [for="first"] > img {
+//   top: -85px;
+// }
+// #first:checked ~ .circle,
+// #first:checked ~ div div .indicator {
+//   left: -66%;
+// }
+
+// #second:checked ~ [for="second"] > img {
+//   top: -85px;
+// }
+// #second:checked ~ .circle,
+// #second:checked ~ div div .indicator {
+//   left: 0;
+// }
+
+// #third:checked ~ [for="third"] > img {
+//   top: -85px;
+// }
+// #third:checked ~ .circle,
+// #third:checked ~ div div .indicator {
+//   left: 66%;
+// }
+
+// #last:checked ~ [for="last"] > img {
+//   top: -85px;
+// }
+// #last:checked ~ .circle,
+// #last:checked ~ div div .indicator {
+//   left: 66%;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Smallest device */
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
