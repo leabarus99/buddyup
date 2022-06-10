@@ -57,8 +57,8 @@
     <div>
     <button id="click-me">Request</button>
     </div>
-    
-<%= @friend.reviews.count %>
+
+<% @friend.reviews %>
 <% @friend.reviews.each do |review| %>
   <%= review.comment %>
   <%= review.rating %>
@@ -76,7 +76,7 @@
     <% else %>
       <%= image_tag("default.jpg") %>
     <% end %>
-                   
+
     <div class="card-friend-infos">
       <div>
         <h2 class="confirmation">Your request was accepted and confirmed!</h2>
@@ -85,7 +85,7 @@
         <p class="resa-details">For <strong><%= @friend.event_category %></strong></p>
 
         <div class="valid-reservation-button">
-          <a class="send-chat" href="#">Chat</a>
+          <a class="send-chat" href="/chatroom">Chat</a>
         </div>
 
         <a class="back-pop">Close</a>
