@@ -20,17 +20,17 @@
       <div class="profile-reservation-infos">
         <h3>John</h3>
         <p>Event date</p>
-         <p id= "icon_comment"><ion-icon name="add-outline"></ion-icon> Add comment</p>
       </div>
     </div>
      <div class="card-profile" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80)">
       <div class="profile-reservation-infos">
         <h3>Léa</h3>
         <p class = 'date'>Event date</p>
-         <p id= "icon_comment"><ion-icon name="add-outline"></ion-icon> Add comment</p>
       </div>
     </div>
   </div>
+
+
 
   <h1 class="subtitle">Preferred</h1>
 
@@ -60,5 +60,19 @@
     </div>
   </div>
 
+<h1 class="subtitle">Add your review</h1>
+
+  <div class= "form-reviews">
+ <% @friends.each do |friend| %>
+      <p class= "name-reviews"> <%= friend.first_name%> </p>
+        <%= simple_form_for [friend, @review] do |f| %>
+        <div>
+          <%= f.input :comment, label: false, placeholder: "Add your review here..." %>
+          <%= f.input :rating, label: false, as: :select, collection: (1..5), required: true, prompt: "What's your rating", input_html: { data: { controller: "jquery-bar-rating" } } %>
+          <%= f.submit class:"btn btn-flat" %>
+        </div>
+        <% end %>
+       <% end %>
+  </div>
 
 </div>

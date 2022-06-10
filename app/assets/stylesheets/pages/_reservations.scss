@@ -74,7 +74,7 @@
   font-size: 18px;
   font-weight: 300;
   padding-left: 0px;
-
+  margin-bottom: -2px;
 }
 
 .profile-reservation-infos h3 {
@@ -209,4 +209,32 @@
 .modal p{
   line-height: 1.4;
   margin-bottom: 5px;
+}
+
+.form-reviews{
+  padding: 30px;
+  padding-top: 10px;
+}
+
+.form-control{
+  border-radius:8px;
+  background-color: #f6ebeb;
+}
+
+.form-select {
+  border-radius:8px;
+  background-color: #f6ebeb;
+}
+
+.first_name {
+  font-weight: bold;
+}
+
+.name-reviews{
+  font-size: 23px;
+    font-weight: bold;
+    font-family: Open sans-serif;
+    margin-bottom: 1px;
+    padding-left: 0px;
+    margin-left: 0px;
 }
